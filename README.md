@@ -5,5 +5,5 @@
 
 # Installation
 ```
-$ bundle install
+bundle install
 ```
