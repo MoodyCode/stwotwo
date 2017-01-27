@@ -3,3 +3,7 @@
 <a href="https://codeclimate.com/github/MoodyCode/stwotwo"><img src="https://codeclimate.com/github/MoodyCode/stwotwo/badges/issue_count.svg" /></a>
 # README
 
+# Installation
+```
+bundle install
+```
