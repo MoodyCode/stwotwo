@@ -20,6 +20,7 @@ gem 'redis', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'materialize-sass'
+gem 'insightly2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
