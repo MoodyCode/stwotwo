@@ -1,3 +1,9 @@
 language: ruby
 rvm:
   - 2.4.0
+before_script:
+  - createdb stwotwo_test
+  - bundle exec rake db:migrate
+services:
+  - redis-server
+  - postgresql
