@@ -21,6 +21,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'materialize-sass'
 gem 'insightly2'
+gem 'rubyzoho'
 
 group :development, :test do
   gem 'byebug', platform: :mri
