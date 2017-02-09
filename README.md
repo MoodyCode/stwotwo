@@ -8,4 +8,5 @@
 # Installation
 ```
 bundle install
+rails db:migrate
 ```
