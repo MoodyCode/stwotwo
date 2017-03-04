@@ -27,5 +27,30 @@ class ZohoService
     def delete_user(id)
       RubyZoho::Crm::Contact.delete(id)
     end
+
+    def get_leads
+      RubyZoho::Crm::Lead.all
+    end
+
+    def get_lead(email)
+      RubyZoho::Crm::Lead.find_by_email(email)
+    end
+
+    def update_lead(email, lead_attributes)
+      lead = RubyZoho::Crm::Lead.find_by_email(email)
+        RubyZoho::Crm::Lead.update(
+            :id => lead.first.leadid,
+            :email => lead_attributes
+        )
+    end
+
+    def new_lead(lead_attributes)
+      lead = RubyZoho::Crm::Lead.new(lead_attributes)
+      lead.save
+    end
+
+    def delete_lead(id)
+      RubyZoho::Crm::Lead.delete(id)
+    end
   end
 end
